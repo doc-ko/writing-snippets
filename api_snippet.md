@@ -89,7 +89,7 @@ There are six possible types of errors on API calls.
     ```
     REDACTED
     ```
-3. Request an invalid resource
+3. Request an invalid resource:
     ```
     REDACTED
     ```
