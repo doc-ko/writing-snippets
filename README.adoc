@@ -3,7 +3,7 @@
 :redoc_output: redoc_output.adoc
 
 
-This repository contains a couple of my writing pieces, for showcasing purposes.
+This repository contains some of my technical writing pieces.
 
 == xref:/{api}[`{api}`]
 
