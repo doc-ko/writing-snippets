@@ -1,0 +1,57 @@
+= Writing Snippets
+:api: api_snippet.md
+:redoc_output: redoc_output.adoc
+
+
+This repository contains a couple of my writing pieces, for showcasing purposes.
+
+== xref:/{api}[`{api}`]
+
+xref:/{api}[Click here to open]
+
+This piece is a description of an OpenAPI specification.
+It is an introduction to a REST API product, detailing authentication and error representation. 
+It also discusses some noteworthy behaviours (e.g. blank response fields being returned as `null`).
+
+After this introduction, you would find a list of endpoints and their descriptions.
+
+NOTE: Company and product names have been genericised.
+Example requests and responses were created for the purpose of this snippet.
+
+To understand where this introduction might fit in, here are some other examples of API documentation:
+
+* https://petstore.swagger.io/[SwaggerHub]
+* https://redocly.github.io/redoc/[Redoc]
+
+
+=== Intended Audience
+Included in the document.
+
+== xref:/{redoc_output}[`{redoc_output}`]
+
+xref:/{redoc_output}[Click here to open]
+
+This is an internal process to generating a Redoc output from an OpenAPI specification in SwaggerHub.
+The implementation has been simplified through the use of a PowerShell script.
+
+=== Intended Audience
+Developers familiar with SwaggerHub.
+
+As such, I have not added a troubleshooting section, nor instructions on how to use SwaggerHub.
+
+== Celo Help Centre
+
+I worked on the Celo Help Centre until May 2021, building the website from a Zendesk template and changing it to suit company branding.
+
+=== Articles
+
+Some handpicked articles which, at the time of writing, have not been updated.
+
+NOTE: If the *Last Modified* date is after 1 May 2021, then there have been changes to the article that I have not made.
+In that case, please disregard said article.
+
+* https://support.celohealth.com/hc/en-us/articles/360054294914[Sign up and create a Celo account]
+* https://support.celohealth.com/hc/en-us/articles/360055220454[Verification and verified users]
+
+=== Intended Audience
+Healthcare workers with potentially little to no exposure to technology: older doctors and nurses who may not have an intuitive understanding of mobile apps.

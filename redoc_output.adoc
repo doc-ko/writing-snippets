@@ -1,0 +1,48 @@
+:imagesdir: images
+
+== Building the Redoc output from OpenAPI specs
+
+[IMPORTANT]
+====
+Before starting, talk to the documentation team to obtain the following files needed to publish the output:
+
+`processFile.ps1`::
+Batch script that handles the `redoc-cli` output generation
+
+`theme.json`::
+A custom theme to ensure that the output is branded according to company specifications.
+====
+
+. Open the API to be published using SwaggerHub.
+
+. Select *Export* on the right side of the screen.
++
+image:swaggerhub_export.png[SwaggerHub Export Button]
++
+A menu will appear.
+
+. From the menu, select *Download API* > *JSON Resolved*.
++
+This downloads the OpenAPI specs as a JSON file.
+
+. Place the OpenAPI specs file into a directory containing both `processFile.ps1` and `theme.json`.
+
+. Open Windows PowerShell and navigate (using `cd`) to the directory where you have placed the OpenAPI specs.
+
+
+. Type in the following command:
++
+[source, powershell]
+ .\processFile.ps1 -Filename .\{name of JSON file} -Theme .\theme.json -Output {name of output}.html
++
+where 
+`{name of JSON file}`:: 
+the name of the JSON file that you have downloaded.
+`{name of output}`:: 
+the name of the output file.
+Note that there cannot already be an file with the same name in the directory; either delete this file or use a different name.
+
++
+IMPORTANT: Do not forget to add `.\` before the name of each file (except the output).
+
+The Redoc file will appear with the name `{name of output}.html`.
